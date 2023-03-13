@@ -9,8 +9,12 @@ fun = lightbulb.Plugin("fun")
 @lightbulb.command("kitty", "Awww 🥰 ")
 @lightbulb.implements(lightbulb.SlashCommand)
 async def kitty(ctx : lightbulb.Context):
-    embed = hikari.Embed(title="A kitty pic for you! <3").set_image("https://cataas.com/cat").set_footer(f"Powered by Cataas")
-    await ctx.respond(embed=embed)
+    async with aiohttp.ClientSession() as session:
+        async with session.get("https://cataas.com/cat?json=true") as cat:
+            jsonvalue = await cat.json()
+            cat_img = jsonvalue["url"]
+            embed = hikari.Embed(title="A kitty pic for you! <3").set_image(f"https://cataas.com/{cat_img}").set_footer(f"Powered by Cataas")
+            await ctx.respond(embed=embed)
 
 @fun.command
 @lightbulb.command("meme", "The big funny")
