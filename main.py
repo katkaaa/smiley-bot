@@ -15,6 +15,7 @@ bot = lightbulb.BotApp(token = token, prefix="s!", intents=intents, help_class=N
 async def help_message(ctx : lightbulb.Context):
     embed = hikari.Embed(title = "Here to help!")
     embed.add_field(name="Fun", value="`meme`\n`kitty`")
+    embed.add_field(name="Moderation", value="`ban`\n`kick`\n`timeout`")
     embed.add_field(name="Misc", value="`ping`\n`apis`")
     embed.add_field(name="**Source code**", value="**Check out the source code on [Github!](https://github.com/katkaaa/smiley-bot)**")
     await ctx.respond(embed)
