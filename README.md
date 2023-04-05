@@ -5,7 +5,7 @@ This is a rewrite of the old version, the old repo is now privated.
 
 Invite Smiley into your server [here!](https://discord.com/api/oauth2/authorize?client_id=892396707608932353&permissions=1099511639046&scope=bot%20applications.commands)
 
-Join the support server [here!](https://discord.gg/zT3vNTKbYg)
+Join the support server [here!](https://discord.gg/87WDjkd6J5)
 
 ## Commands
 
