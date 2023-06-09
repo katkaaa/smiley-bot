@@ -32,7 +32,7 @@ Moderation commands:
 -  `/ban` - Bans an user
 
 ## How to use
- - Install the packages from requirements.txt (``pip install requirements.txt``)
+ - Install the packages from requirements.txt (``pip install -R requirements.txt``)
  - Set up an .env with your token, edit the intents based on what you have checked out in your developer portal
  - In CMD type ``cd <the directory where you cloned this repo>``, then type ``py main.py`` to start the bot
  - You may want to add your own commands, so here's a very simple example (even though you could just take a look at one of the extensions):
